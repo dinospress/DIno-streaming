@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINO STREAMING</title>
+    <link rel="icon" href="dino.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c6e32;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .category {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .category a {
+            text-decoration: none;
+        }
+
+        .category button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .category button:hover {
+            background-color: #45a049;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .product img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+
+        .product-info h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .product-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>𝗗𝗜𝗡𝗢 𝗦𝗧𝗥𝗘𝗔𝗠𝗜𝗡𝗚</h1>
+
+    <div class="container">
+        <div class="category">
+            <button onclick="window.location.href='index.html';">PLATAFORMAS</button>
+            
+            </a>
+            <button onclick="window.location.href='paginas/membresias.html';">PLATAFORMAS</button>
+            </a>
+        </div>
+
+        <!-- Products -->
+        <div class="product">
+            <img src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSAoCAAARoKNtjyIx0lCzmR0z2zH7AhjyDdiOmJlCxiPYMTOzU2ZYmGncmZ5WMF1SqfvZPCImAOjOD6R+BeIfVGaIf0CyFpJwi6pvV4WISU2i+g/tk8oJSEEfCSukoacwu6R/axJ9I8YqhYHkFkj2Sxgf9Pg1CTtm4Oi8OqMqYSWc03nVjBQaEiarmWcwTIlGzMGReW1aQ8KIWBdyzLQwDg9zGhkpqEn0C3mLddQl+mu411MtTk0DjgEAk+YbEpBoOAgA0KVZIv9paPZgcVDnJFZgi2Q6TrJ8GdTp85yi4YjSbeG03ML9y/IKh0sgITVL8Az+KhlO/lO2TajOEJt9ShCWjtnySueWzvu/80vXKp1fusAtTFNX6IlkpBO+psgVQfKBHZpimQ7pKjzXEzkSRkr6APM1uRIuLQboFM7OSGkdjmqJbQkjJbUBxutxJBpdUlYDKJxBwyrAaR2RLWEzAGCCjtCS8FJSBgDwrWB9OqROz24dtoSXkro9wzT4xUl74CEvsES6pHalZzHPNyUsJCc5Azqsli1h0tqQe4nlizQyHeNYgSNRT0hpHrxluRI1n9RWHGc5IiGtmjedE9kS0CbFoHzFMSSqKSk1FBsZoSUBCQlBOSqj+a5EvUvKHAXcpAWWxBBUpoh4DdQzfmGGmQL7ScC775ePrV0+ZxIAwDAC1AAABs9buenclT8fPAZWUDggZAIAADAQAJ0BKkAAQAA+MQ6MRiIREQoAIAMEtgBh8oAc79pXnnmx1v+q8FbwH2A/Bj5/+kDbAc6n+gHsA8kD1QPWI9AD9VetF/Zn9qvZkPoBYRDBgv9ZtjOIqbrY+7tCNePq8pRmPyIYgoZhmEOL8qpqPc5EDQUT71IuMJMTC0NAqxZB/fJojb4WfK+EAAD+9CU+u2VLVfN5dWnmzCaEd2HETmmQ125t4H+vQ5/4/wTvyPhJDzZcTawKZE59dT2onfgp3+Yij/kTK8kX5hhWMIurP9aTMcFRBFPLWLnI74LqxtxSguIeM6E//ATrUSv/1zKDeTvZrx7/wJ2gr6UTRMp1OZkWniSljGByF3QMSziM77BUm2VQKlYrRd9P//d3mkp078BvapufUnFBjUW8R0kTY1Rf1QgPv764aR7iC7VduxbmWlXQ0vdcJdUrnPKqDrrj+ddR6Q0AxmJNPgfPjFEuujJDO9cRhvCMO1O5r8xhZxK50/0XPl3i/6/TWOUrsBC/Kj6xJzUzLZzpOAteCZ0li//+l0ZMKJXFL4+JYJri7voj0uxlxED9Oel+E+YWppeX0y2yvfPuJ2p/BBZLs/SKAJYqaWKz/Fl63aVm/eQviMefliPgGPF3lg42ZOBt0m1K6AvCWa/gc7spbO1cN1EUVCiFyyprfeBSSgHaIRdndw1f/w/+ynmutbOpjCWkxpIPY15gPAH2YXn/bPC+NMWjOIKeJ/jmPwb+DM9AkoPTKZrvsFDDg+BzXLRK/9tHd5E0vtHaXA7scHzhN/BfKlvIan4sbbBgRh1vaaRA5DKHx+zdNhDAAA==" alt="Netflix">
+            <div class="product-info">
+                <h2>Netflix - $12.500</h2>
+                <p>1 PERFIL NETFLIX PRIVADA 1 DISPOSITIVO</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Netflix%0APrecio%3A+%2412.500%0ADescripci%C3%B3n%3A+PERFIL+NETFLIX+PRIVADA+1+DISPOSITIVO&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSAoCAAARoKNtjyIx0lCzmR0z2zH7AhjyDdiOmJlCxiPYMTOzU2ZYmGncmZ5WMF1SqfvZPCImAOjOD6R+BeIfVGaIf0CyFpJwi6pvV4WISU2i+g/tk8oJSEEfCSukoacwu6R/axJ9I8YqhYHkFkj2Sxgf9Pg1CTtm4Oi8OqMqYSWc03nVjBQaEiarmWcwTIlGzMGReW1aQ8KIWBdyzLQwDg9zGhkpqEn0C3mLddQl+mu411MtTk0DjgEAk+YbEpBoOAgA0KVZIv9paPZgcVDnJFZgi2Q6TrJ8GdTp85yi4YjSbeG03ML9y/IKh0sgITVL8Az+KhlO/lO2TajOEJt9ShCWjtnySueWzvu/80vXKp1fusAtTFNX6IlkpBO+psgVQfKBHZpimQ7pKjzXEzkSRkr6APM1uRIuLQboFM7OSGkdjmqJbQkjJbUBxutxJBpdUlYDKJxBwyrAaR2RLWEzAGCCjtCS8FJSBgDwrWB9OqROz24dtoSXkro9wzT4xUl74CEvsES6pHalZzHPNyUsJCc5Azqsli1h0tqQe4nlizQyHeNYgSNRT0hpHrxluRI1n9RWHGc5IiGtmjedE9kS0CbFoHzFMSSqKSk1FBsZoSUBCQlBOSqj+a5EvUvKHAXcpAWWxBBUpoh4DdQzfmGGmQL7ScC775ePrV0+ZxIAwDAC1AAABs9buenclT8fPAZWUDggZAIAADAQAJ0BKkAAQAA+MQ6MRiIREQoAIAMEtgBh8oAc79pXnnmx1v+q8FbwH2A/Bj5/+kDbAc6n+gHsA8kD1QPWI9AD9VetF/Zn9qvZkPoBYRDBgv9ZtjOIqbrY+7tCNePq8pRmPyIYgoZhmEOL8qpqPc5EDQUT71IuMJMTC0NAqxZB/fJojb4WfK+EAAD+9CU+u2VLVfN5dWnmzCaEd2HETmmQ125t4H+vQ5/4/wTvyPhJDzZcTawKZE59dT2onfgp3+Yij/kTK8kX5hhWMIurP9aTMcFRBFPLWLnI74LqxtxSguIeM6E//ATrUSv/1zKDeTvZrx7/wJ2gr6UTRMp1OZkWniSljGByF3QMSziM77BUm2VQKlYrRd9P//d3mkp078BvapufUnFBjUW8R0kTY1Rf1QgPv764aR7iC7VduxbmWlXQ0vdcJdUrnPKqDrrj+ddR6Q0AxmJNPgfPjFEuujJDO9cRhvCMO1O5r8xhZxK50/0XPl3i/6/TWOUrsBC/Kj6xJzUzLZzpOAteCZ0li//+l0ZMKJXFL4+JYJri7voj0uxlxED9Oel+E+YWppeX0y2yvfPuJ2p/BBZLs/SKAJYqaWKz/Fl63aVm/eQviMefliPgGPF3lg42ZOBt0m1K6AvCWa/gc7spbO1cN1EUVCiFyyprfeBSSgHaIRdndw1f/w/+ynmutbOpjCWkxpIPY15gPAH2YXn/bPC+NMWjOIKeJ/jmPwb+DM9AkoPTKZrvsFDDg+BzXLRK/9tHd5E0vtHaXA7scHzhN/BfKlvIan4sbbBgRh1vaaRA5DKHx+zdNhDAAA==" alt="Netflix">
+            <div class="product-info">
+                <h2>Netflix - $9.500</h2>
+                <p>PERFIL NETFLIX GENERICA 1 DISPOSITIVO</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Netflix%0APrecio%3A+%249.500%0ADescripci%C3%B3n%3A+PERFIL+NETFLIX++GENERICA+1+DISPOSITIVO+&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+            
+        <div class="product">
+            <img src="data:image/webp;base64,UklGRtIEAABXRUJQVlA4IMYEAAAwGQCdASpAAEAAPjEOjEYiEREJgCADBLGAXG3mH/vZPNKtfdMD5fgEgzlgPYTzznoP3gD0AOk3/cGYbfi1+3WXy+V/lD/GNIz/Kfx4/LTONfjH87/KLVAP55+UfogcgN/Kf8/+Un+O+G39R/Ir+3e0f5F/uv5Xf0v7Av4X/Gv6x/RP77/qv7V//O4A9gb9Elk7l+z+TtyLfrjAwOJaC3WKMYyyqt+Qz46bmDWZsKkvqV+4RNWcH9sptLHZ1isNmrs+kWRZR5WkXkXePqt3PYUyIGAA/v7j8X1Ic7Iv6P6cdST//j6cbOcet9plXImn1EUeSB7XvQ8ExGHwypMiLZ5OSk8BaRUn/1VuB8jzAfTN8Iff/H7r0w1MqoU/1N7A014hUiPcc17EWyIKi87w0URFvK3jzTLEUy2dhn0YzjldYTsqxefsXrj/R+miNvDhHLpN/0ft6n5S9usxDKo+kYcOkn++ejGE8+HsWp2HVh1ofghd9IfltcE2PIYkaK8xvpTFz/6RnWePqYraofsdFM733Pw6/e3AXl/+lz9Tt2U9/TA5hnHYcbC4wwYAIJn9hoo6GYl/E6RTZ0J2EczTGfX4a8+gG2fsXPqczKNV/6FYqAWVpdDbe/8KE/8Ff15Is7362Snoo8TtuA7wMt9NksDc1LvpKizH+lpaoGsHAaDZNr3KK5FAZ6ixvVGJb/AzdLiK7kAYED7fJg0m8e3GUpPwcZbX7nthj0BvOEFWM3t+7bJYq720YgO8O0sfVGrlGPm9I+oxLJrJ4rvC7sm0VHxwK4jlVjAIuuoVDNyyXkIjwNEafPjvDR4T5jQX3vThl+HifwjyjhyfvaUDAu84SVXULtVcZ4INw7//m06z3BhbK5Pe/brl+Sm1WvL5Rg9QarmETFJ/eYD80Zs+5ADynxOrs/83+Tm6dv6fI3iNC+8Q3LuiazzF5Xz5MM1H5I72rq2M2KaoP07Kiez//56bmLLLz+Lcwr/+mWBMKKtL8UM2keygF7m+ZurTtQfNC1ksOfitv/tOuh8dLP4CSOfCUH/DlRke28snQ/THOsPX84e9WhdqgWL1gjuyP/+BqLUgHlU+byfx6oqA8LQfvBv3tA0hJ4x+BMhKWyH6uUF3LKX6xh/CjtrxmmuM0f/wY4U2qh3g9PHMVuQp0jBUomn+0gjlVXBmFs/Cc+lf48joFUJbMcg03TUMBmRjH9HuIbMwjrnn5mm2G5kKzvmFZjunj6J318A4/u5v02Mp4XsHz0lobh8b0j59IKUHHodYmVWJur/+pry6l+/SiB8DLEe5J0GqTl2ECUhRdCpfTFu1qY/rmQ6Z2dailIkNCiRhIUe6+9Ih8jPfTnHP7H/ie6nPRz8QBw/v4nwfWmOLdGvoxe4Jt42vKXZHuRkL0olOEevhyIOSvbSW/u+oinhFXA7VB4OGkMT9nB6lSZAYXHUYd1Hd6hzp2H3roR1Nj704P1AMn/m5DiY+NkcYpI+n10MU7PW0X/d2LdeeoqokjWyP8QH6yt/TR2ITGwk1D1cuxlsAJ6ysqzrPvow/EnrpN3Wj+Bx3U7i7zt4SFA/0cwlYkF9jZ+EIFbQXcv1rFB1Hvz+GTNkRhg8E1F6VirKPylfBr6bIkJDlQQAA" alt="Disney+">
+            <div class="product-info">
+                <h2>Disney+ - $15.000</h2>
+                <p>1 PANTALLA DISNEY PREMIUM PRIVADA</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Disney%2B%0APrecio%3A+%2415.000%0ADescripci%C3%B3n%3A+%0A1+PANTALLLA+DISNEY%2B+STAR%2B+ESPAN+PREMIUM+PRIVADA&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,UklGRtIEAABXRUJQVlA4IMYEAAAwGQCdASpAAEAAPjEOjEYiEREJgCADBLGAXG3mH/vZPNKtfdMD5fgEgzlgPYTzznoP3gD0AOk3/cGYbfi1+3WXy+V/lD/GNIz/Kfx4/LTONfjH87/KLVAP55+UfogcgN/Kf8/+Un+O+G39R/Ir+3e0f5F/uv5Xf0v7Av4X/Gv6x/RP77/qv7V//O4A9gb9Elk7l+z+TtyLfrjAwOJaC3WKMYyyqt+Qz46bmDWZsKkvqV+4RNWcH9sptLHZ1isNmrs+kWRZR5WkXkXePqt3PYUyIGAA/v7j8X1Ic7Iv6P6cdST//j6cbOcet9plXImn1EUeSB7XvQ8ExGHwypMiLZ5OSk8BaRUn/1VuB8jzAfTN8Iff/H7r0w1MqoU/1N7A014hUiPcc17EWyIKi87w0URFvK3jzTLEUy2dhn0YzjldYTsqxefsXrj/R+miNvDhHLpN/0ft6n5S9usxDKo+kYcOkn++ejGE8+HsWp2HVh1ofghd9IfltcE2PIYkaK8xvpTFz/6RnWePqYraofsdFM733Pw6/e3AXl/+lz9Tt2U9/TA5hnHYcbC4wwYAIJn9hoo6GYl/E6RTZ0J2EczTGfX4a8+gG2fsXPqczKNV/6FYqAWVpdDbe/8KE/8Ff15Is7362Snoo8TtuA7wMt9NksDc1LvpKizH+lpaoGsHAaDZNr3KK5FAZ6ixvVGJb/AzdLiK7kAYED7fJg0m8e3GUpPwcZbX7nthj0BvOEFWM3t+7bJYq720YgO8O0sfVGrlGPm9I+oxLJrJ4rvC7sm0VHxwK4jlVjAIuuoVDNyyXkIjwNEafPjvDR4T5jQX3vThl+HifwjyjhyfvaUDAu84SVXULtVcZ4INw7//m06z3BhbK5Pe/brl+Sm1WvL5Rg9QarmETFJ/eYD80Zs+5ADynxOrs/83+Tm6dv6fI3iNC+8Q3LuiazzF5Xz5MM1H5I72rq2M2KaoP07Kiez//56bmLLLz+Lcwr/+mWBMKKtL8UM2keygF7m+ZurTtQfNC1ksOfitv/tOuh8dLP4CSOfCUH/DlRke28snQ/THOsPX84e9WhdqgWL1gjuyP/+BqLUgHlU+byfx6oqA8LQfvBv3tA0hJ4x+BMhKWyH6uUF3LKX6xh/CjtrxmmuM0f/wY4U2qh3g9PHMVuQp0jBUomn+0gjlVXBmFs/Cc+lf48joFUJbMcg03TUMBmRjH9HuIbMwjrnn5mm2G5kKzvmFZjunj6J318A4/u5v02Mp4XsHz0lobh8b0j59IKUHHodYmVWJur/+pry6l+/SiB8DLEe5J0GqTl2ECUhRdCpfTFu1qY/rmQ6Z2dailIkNCiRhIUe6+9Ih8jPfTnHP7H/ie6nPRz8QBw/v4nwfWmOLdGvoxe4Jt42vKXZHuRkL0olOEevhyIOSvbSW/u+oinhFXA7VB4OGkMT9nB6lSZAYXHUYd1Hd6hzp2H3roR1Nj704P1AMn/m5DiY+NkcYpI+n10MU7PW0X/d2LdeeoqokjWyP8QH6yt/TR2ITGwk1D1cuxlsAJ6ysqzrPvow/EnrpN3Wj+Bx3U7i7zt4SFA/0cwlYkF9jZ+EIFbQXcv1rFB1Hvz+GTNkRhg8E1F6VirKPylfBr6bIkJDlQQAA">
+            <div class="product-info">
+                <h2>Disney+ - $10.500</h2>
+                <p>1 PANTALLA DISNEY+ GENERICA</p>
+            </div> 
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Disney%2B%0APrecio%3A+%2410.500%0ADescripci%C3%B3n%3A+1+PANTALLLA+DISNEY%2B+GENERICA&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBEQACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAgYDBAUB/8QALxAAAQMDAgMHAgcAAAAAAAAAAQIDBAAFERITBiExFBVBUWFxkULRFjJDUoHS8f/EABoBAQACAwEAAAAAAAAAAAAAAAACBQEDBAb/xAAsEQABAwMCBQIGAwAAAAAAAAABAAIDBBEhEnETFDFBYTJRFSIzgeHwBaHR/9oADAMBAAIRAxEAPwCNe6XhkoiURBz6URKIlESiIeQNECrEfiOcuDFuT0SOITru0vS4StPPGemMelVTK6UxtlLRpJt5Vq6hiEjog46gL+Fs96S5blwZENkxoy3G3VlwgqATywK28xJIXt0jSLg58LVy8cYY7UdTrEY8rXt90fRHtUK2w2B2iMpaQ46rCMHzwSa1Q1Dw2OOJoyPfots1OwukklccHsAot8RXExGZbkSMGe0iO5hxRUTnGQMch80FdNoDy0WvZZNDDrLA43tcYUpfFC25b6I7UdxDL4Z2i4d505wSlOOn2rMn8gQ8hoGDa3c7LEf8cCwFxIJF72wNyrNVoqpD0NOyyFVbBw+8u1w0XJ6QhDLhc7IQAnUCcZ5Zx44qppKJxiaJCRbNlbVda0SuMQGRa67MSBHQbihqQVqkuKU6AQS2SMY/2uyOFg4gB9XXwuKSZ54ZcPSMeViiWmLElwNMkl2IwptCFEZUk+JFQjpo43s+bLQpSVMkjH3bhxXn4fj93iHvO6BJ7Rq5ZznOPanJN4ei/e6zzruJxLdrKXcymprr8Oc9HQ85uOtJQlQKvEgkZGazyha8uY4gHJGFjmw5ga9gNhYHK6tdi40oirRv00QVtltnvITeyBOk6T46sZzjHrVXzkvDIsNerT4VpyUXEBudGnUsS7sbeb26zFY3kSUNJKQRuKVnmrnUDU8LilrRe4G+6mKYTcIOcbWJ22UdyXG4pbeuamVrbgLWSwkgYGT4+NNUjKoOltcNPRZ0xvpC2K+XDqsls4hlypcUKEdxp8KUttlKtccAZBUo8jUoa2R723sQfa+FGehjYx1rgjubZUE8Q3EQGrw41G7uce0bQzuJTkjOenUVEVs2gTkDQTa3dZNFCZDACdYHXsrXVuqhKIuZ3NFXeU3YLUXNP5ARoJxgK98Vy8rGZuNf/N11c08QcC2P72WN7h+K+iel1xwia4lxRBAKFDoRUXULHB4J9WdlNta9pYQPSLbpHsKUTBLlTJEpzZUyd3TgpPsKMowH63uJNrZR9YSzQxoaL3x7qdvtDkFSEIuMhcVvITHWE4x5E4yRWYaUxEAPOkdsKM1UJQSWDUe+Vojh+E043GcuLnZUO7qIS1pA1dceZHpWjk4mkML/AJb304W/nZXAvDPmtbVlWKrJVqURcmXbZTK1PWWSI6ycqjuDUys+30n2rjkp3tOqB1vHb8LsjqGOGmdt/Pf8rRXxDcYR03SyPjH6sY60n7fNc5rposSxHcZW8UUMuYpRscKA45tXQszAr9u2n+1Y+MQex/fupfCJ/cfv2WZviOTL5W2yzHSfqew2n551MV8kn0oid8LWaFkf1ZQNsrFJsTktkJlxIKXpDySox2QNpIOpRKzzJPT+a1vo3PbZ7RckdB0HU565WxlY2N12ONgD1PU9BjtZWarZVSURKIlESmESiJREoi//2Q==" alt="Amazon">
+            <div class="product-info">
+                <h2>Amazon - $9.500</h2>
+                <p>1 PANTALLA PRIME VIDEO PRIVADA</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Prime+Video%0APrecio%3A+%249.500%0ADescripci%C3%B3n%3A+1+PANTALLA+PRIME+VIDEO+ORIGINAL+PRIVADA+&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBEQACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAgYDBAUB/8QALxAAAQMDAgMHAgcAAAAAAAAAAQIDBAAFERITBiExFBVBUWFxkULRFjJDUoHS8f/EABoBAQACAwEAAAAAAAAAAAAAAAACBQEDBAb/xAAsEQABAwMCBQIGAwAAAAAAAAABAAIDBBEhEnETFDFBYTJRFSIzgeHwBaHR/9oADAMBAAIRAxEAPwCNe6XhkoiURBz6URKIlESiIeQNECrEfiOcuDFuT0SOITru0vS4StPPGemMelVTK6UxtlLRpJt5Vq6hiEjog46gL+Fs96S5blwZENkxoy3G3VlwgqATywK28xJIXt0jSLg58LVy8cYY7UdTrEY8rXt90fRHtUK2w2B2iMpaQ46rCMHzwSa1Q1Dw2OOJoyPfots1OwukklccHsAot8RXExGZbkSMGe0iO5hxRUTnGQMch80FdNoDy0WvZZNDDrLA43tcYUpfFC25b6I7UdxDL4Z2i4d505wSlOOn2rMn8gQ8hoGDa3c7LEf8cCwFxIJF72wNyrNVoqpD0NOyyFVbBw+8u1w0XJ6QhDLhc7IQAnUCcZ5Zx44qppKJxiaJCRbNlbVda0SuMQGRa67MSBHQbihqQVqkuKU6AQS2SMY/2uyOFg4gB9XXwuKSZ54ZcPSMeViiWmLElwNMkl2IwptCFEZUk+JFQjpo43s+bLQpSVMkjH3bhxXn4fj93iHvO6BJ7Rq5ZznOPanJN4ei/e6zzruJxLdrKXcymprr8Oc9HQ85uOtJQlQKvEgkZGazyha8uY4gHJGFjmw5ga9gNhYHK6tdi40oirRv00QVtltnvITeyBOk6T46sZzjHrVXzkvDIsNerT4VpyUXEBudGnUsS7sbeb26zFY3kSUNJKQRuKVnmrnUDU8LilrRe4G+6mKYTcIOcbWJ22UdyXG4pbeuamVrbgLWSwkgYGT4+NNUjKoOltcNPRZ0xvpC2K+XDqsls4hlypcUKEdxp8KUttlKtccAZBUo8jUoa2R723sQfa+FGehjYx1rgjubZUE8Q3EQGrw41G7uce0bQzuJTkjOenUVEVs2gTkDQTa3dZNFCZDACdYHXsrXVuqhKIuZ3NFXeU3YLUXNP5ARoJxgK98Vy8rGZuNf/N11c08QcC2P72WN7h+K+iel1xwia4lxRBAKFDoRUXULHB4J9WdlNta9pYQPSLbpHsKUTBLlTJEpzZUyd3TgpPsKMowH63uJNrZR9YSzQxoaL3x7qdvtDkFSEIuMhcVvITHWE4x5E4yRWYaUxEAPOkdsKM1UJQSWDUe+Vojh+E043GcuLnZUO7qIS1pA1dceZHpWjk4mkML/AJb304W/nZXAvDPmtbVlWKrJVqURcmXbZTK1PWWSI6ycqjuDUys+30n2rjkp3tOqB1vHb8LsjqGOGmdt/Pf8rRXxDcYR03SyPjH6sY60n7fNc5rposSxHcZW8UUMuYpRscKA45tXQszAr9u2n+1Y+MQex/fupfCJ/cfv2WZviOTL5W2yzHSfqew2n551MV8kn0oid8LWaFkf1ZQNsrFJsTktkJlxIKXpDySox2QNpIOpRKzzJPT+a1vo3PbZ7RckdB0HU565WxlY2N12ONgD1PU9BjtZWarZVSURKIlESmESiJREoi//2Q==" alt="Amazon">
+            <div class="product-info">
+                <h2>Amazon - $6.500</h2>
+                <p>1 PANTALLA PRIME VIDEO GENERICA</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Prime+Video%0APrecio%3A+%246.500%0ADescripci%C3%B3n%3A+1+PANTALLA+PRIME+VIDEO+GENERICA&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="https://play-lh.googleusercontent.com/d9bssoNJ0XKRlVZQBx0CJZP7EDVqq0N4y62HX42AHorhC5U3sw4v1VGpF7TIAzvSPCY=w240-h480-rw">
+            <div class="product-info">
+                <h2>HBO Max - $8.000</h2>
+                <p>1 PANTALLA HBO MAX 30 DIAS</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+HBO+Max%0APrecio%3A+%248.000%0ADescripci%C3%B3n%3A+1+PANTALLA+HBO+MAX+30+DIAS+&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBEQACEQEDEQH/xAAaAAABBQEAAAAAAAAAAAAAAAAAAgQFBgcB/8QALxAAAgAFAgUDAwMFAAAAAAAAAQIAAwQFERIhBhMUMVFBYXEVUrEikcEHIzJCYv/EABsBAAIDAQEBAAAAAAAAAAAAAAAEAQMGBQIH/8QAMREAAQMCAwUFCAMAAAAAAAAAAQACEQMEEiExBRNBUWEygbHB8BQiM1JxkaHRQuHx/9oADAMBAAIRAxEAPwCtx9LWNRAhKRWdwiKWY7BVGSYgkASVIBJgJ79GuoTX9LrtP3dO+PxFHtdvMbwfcK3cVflP2TFlKsVYEMNiCMEReCCJCqII1XIlQiBCIEKx8HcKT+JKlmZjJopRxNmgbk/avv8AiOZtHaTbNsDNx0HmU7aWhuDOgC0210UmkoJsrhihl0s+TPEp3q5TAzACNRz3YY7Rlq1V9SoDcukETkdOXQdV2qbA1pFEQQeKmeRWC4PO6oGmMrSsjQNn+7Pj2hTEzd4YznXomIdimclCXW3U1fR0sjiWhSfWVEwyhOo5Tf2+5B1dwMD18Q5QrvpPc62dDRnBOvdxS9Sm17QKwknksw4u4YqeG6wKxM2km55M7Hf/AJPg/mNVs/aDLxnJw1HrguHdWrrd3RQEdFKJUtGmOsuWup2IVQPUmIc4NBJUgEmAtuoLfSUkii4ekVFRIn0qJUu0lSomYO+TjBBPp8RhKtapUc65cAQ6Rnw/xaZlNrQKIMEZqywgm1Ftf6BbsbaXfnKVVnCEortuqFuwYgdoY9lq7rexl+Y5xyVO/ZjwcVJkZhdXKrXS2Utdbq3h1p9RUVfLNTLmTwTpYk6cNjGAdseDHRoV30qrbkAATGX5y9ZpOpSa9jqMydVivyMRulmk/wCH9P1+2a/8erlZ+NYhe8n2apHynwVtv8Vv1C3mn6zr6nqGkdNtyAudY231RgHbvAMMzx5LUjFiM6cFCcbcRtZ6ZKOgHMulX+mQijJXO2o/x7/Bh7Z1kLhxfUyY3X9Ja7ud0MLe0dE14Lsqz+DmSt1c6vdpzztWWLZ/Q4PnYEfvFu0bnDeTT0bAA8R5LxaUZt4dqc/7U7Y7l1cpqaqdBcaY6KmUDvkf7Afa2xHzCFxRwHE3sHQ+X1GhTNGpiGE9oa+uqcTes+pSeU0jo9Dc0HPM1bYx7RWN3uzM4uHJezixiNFgF00fU6zl40c99OPGo4j6FbzuWTrA8FlK3xHRzTdHaW6uhKspBUj0IiwgOEFeAYMha/U8SWums0rigDVX1EgSElazu47rjPYHcnx8xjGWFd9c2f8AEGZ6c+9aF1zTbT3/ABIhZ/TXoFq+7XNjV3GoRpEhdWOXlcF9uwAIAA940NS07FCl7rBmevT9rlNuO1Vfm45BXb+mNzudfT1k641uujplWXLRlVQmBknIA2AxHF21QoUXNbTb7xzOq6OzqtSo0l5yCnri0ivuYp6WZLkXOVK6ijqQQRMXsynHcbAEeCCNxtzqQdTp4nCWEwR4d/I9ybfD3wMnDMFMbleKKittdfHltJusuV0ryGmElJnouOxG+rPqN4vo2tSrVZbgywmZ6c/KOaqqVmMY6qe1p3rGI26ziIFC7ApXIFCWsx1UqrsFPcA4BiC1pMkL0HECAkqSpypIPkbQEA6qASNF1nZzl2LHyTmANA0CCSdUmJUIgQiBCIEIgQiBCIEIgQv/2Q==">
+            <div class="product-info">
+                <h2>Paramount+ - $8.000</h2>
+                <p>1 PANTALLA PARAMOUNT+</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Paramount%2B%0APrecio%3A+%248.000%0ADescripci%C3%B3n%3A+1+PANTALLA+PARAMOUNT&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,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"Crunchyroll">
+            <div class="product-info">
+                <h2>Crunchyroll - $8.000</h2>
+                <p>1 PANTALLA DE CRUNCHYROLL 30 DIAS</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Crunchyroll%0APrecio%3A+%248.000%0ADescripci%C3%B3n%3A+1+PANTALLA+DE+CRUNCHYROLL+30+DIAS&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,UklGRkQCAABXRUJQVlA4IDgCAAAQDgCdASo4ADgAPjEMjEYiEREKgCADBLIAaPYAlB/OfszhoP2T7jN4b3AH7M+hB+wHYAfrB1gHoAeU/+0XwL/rd+xntGGACmK+Nn6R32azwSIdS1PsiaxJgUWh6BoBX4lKINt2bLEMPqWZ2p1Q4iyzRnmfc6CrBYM8AP7+us6ueB+Or4XZf7K/HGvVczoznuZsjwBr33Wf7ZwMHCJnHtb9gvPzS/pgtmMVL/bVvTaB/ZH8yNAD++w83KH2/DNZp2mGTDqwf/++r5f5Vr/Y7RnyVktvlW245o7Com9gNYI6B4kexDDWimp2jl5ZB14PAhcnFeH3ijseFqFd+ppRPkvEVjHsJkzB9PO2vc81TfIeubRZdbYySki4+WKf8qi1axTWubvknD+XsTJ2igyDaWDTLaimryGevDiWwwPiSv1v1pf6efoZIFbWq+bRATjJfZLx823LucUv/0Z9VO/jF1p8LwubTQb3Nv0j/qA0uawBE4Bz7mg60AXXx3v4+Pn5+3/qwWO13v9uamtRRmDzW+n0wxxGdUS2xN/YabPI0/9fvr/flVbsPwXMe2++f/1pr7I+utJGGEpBoYBIa34eaC8yvlH38y2wCDsnb0jjGAx3z+d5/mS+VTQJKq1/cllSHucEazoZJDN4atRnfd4sv44hd7KtBTiHv547jNhCuqX5Yl0D9bcoe0IhH67eJSm37XWK6neFcNesTj76zaPn0I3xfPbSUz20Q9L6spsBAeQ3oE+aVMSoAAAA"plex">
+            <div class="product-info">
+                <h2>Plex - $6.000</h2>
+                <p>1 PANTALLA PLEX 3O DIAS</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Plex%0APrecio%3A+%246.000%0ADescripci%C3%B3n%3A+1+PANTALLA+PLEX+3O+DIAS&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,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">
+            <div class="product-info">
+                <h2>Vix - $7.500</h2>
+                <p>1 PANTALLA VIX 30 DIAS</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+vix%0APrecio%3A+%247.500%0ADescripci%C3%B3n%3A+1+PANTALLA+VIX+30+DIAS+&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,UklGRlQFAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSNABAAAdkCPbtmora58rz993d09xd8Jf9MAtcyJCeuAaOR1wQoeUzN0dnl4/+7vtCKKImAD8t0qgUUwASPMMSMVTyZp0RTZhm8pWZiwZ14ZWrBimMlTou652Itf18/li7m8+7+mJJWev70wkUfYiTJSgQBjbsuNxlTDicTubTWdS6fK3d1evBuO1HOjBjFaWamzvWld58AHzqHl7NEQu333nGAD07IbUht33bgHY6YlBev/x31ibheDFlTcTa1gSBq+n2iF61uOKKlltlInLSldWOrLQ3uMJq68JhdXURcLqktKS1RCesrWSlbAhPGZIs5U0g0kYySMIZ4gPTWFhYAkLxDn5rLByISOs9KuaZOV+V0P23zcttqjo1/dqUxT/+FKZEFXKfQtbROU+6hcDot4B5zaLugXctpYK+nYHcHYfSosJDwPAkyPHTSHBeWcULp852zNlTAzQVH09Qhj70ZbBHe2WqYlAkyEQplaXPzy4ggmGR8+hoaWhMZ1N28lY3DANwyAwgRhgArOOWAd+4DuOU/j16/e3XKQw8eD9x3c/vhQKHoWkDa0AkNJgANBMCtDM0LAUppd9z3cDnwKtWWtiEINAYIxWBmYmIwIzplLzDPnHClZQOCBeAwAAEBMAnQEqQABAAD4tCotFoZDQzfgYAsS2AGbAoK0PNj5n+GH7Y8eX3p5Viz/8d9kvaU7VXtW+Yz9eP8d7UHoA9AD9a+tV9ADyrv2H+Dn9wv239nW7+PxzFkqej5nugb6C9gr9Qf9V6mfUgfsqV7VjQzsNKfJP+jFHskXThOFSxBdPL1NK87Rq9idytopeVtEYXeTgn8hMQiwVFyejMbv7BgAA/v/b6V//25V7HaMzp56JRlz6rM1PyaMdMWrPdbB8a5iejHfmrn+1Y+FwfBdD4B/7bf3d//CzXaJ1iBqWf5i0rT9qiXISvAt/wL/I1/+uiuBLqb/FPADwtLkXZqIvoVMfuUnQ+xv9R/BrsJrcP52MC9QjaF1PTmqu/miBMJkgUy7OWwzMdjobrkZWXZWv0RMiGT8DsqgsAiV1/QiQdn533h3esPPV/LE/vT5xngCA07W6qFCu/XVQsBq2ZvWVxH0EtyiD+q7UEodDfV8ga77/2GBD+k9JsQV2LZUP1xrG2nkYaeWeOxkOmFaBpjkxXwVDQff7yt2K0xoZbLj447XiKrbCHqXJU++NpvrvCptpC6eeXpJPEcz3U8qE5yWl0Kr5oU7JtF3uMubi8h2K2s0qsQh0H9+Dqtyif4buxgpn8eqowItkJqvxp1bKoFWJtgIKbdrW7dcOtHyZPM4UHgdTc/UI+/sT580zx+eQhwznbi7Kuq2zRD8zLoNfFvLJ+b3NVt+MOpQiXycN+sJp/f/f5wm2vMyh2nvhO7hHugY+R7OL/C8+KsVb3WlgOQnTnyruFv1c5wQm4tod2IwApYybiNfymcAoEbbwmQZyqV12Pf54SUELewPFTgGnyI//q5ehOa3gbQfHpXPc/J9SvgDhU4+3KA98cnSdGvNLz//G+QW91i1NEZfFS3wf5KW4foKD+bSvUux8WH//AML9/Ex6UYVXh6Y9mqAV2Uf//LRDeIheFj4QZzY3qmh/eiPbT3QddV7K2f4IBVf+TTl3COvgxp26rJRSZhUxxZWOSZC5GTygCQ8+FJutULKyxfvjw3GSaqljo799e/74G9zXv/gshzzWEsytWnBlTVW/gGRQuYn9xeB3oQjyHykw0DctI9FpHf8KQjTJWNeoa1bG+s8JZx0hRYCkZbUqDtAAAA==">
+            <div class="product-info">
+                <h2>YouTube - $11.000</h2>
+                <p>YOUTUBE PREMIUM 1 MES</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+YouTube%0APrecio%3A+%2411.000%0ADescripci%C3%B3n%3A+YOUTUBE+PREMIUM+1+MES&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAYFBMVEUe12D///8A1VUZ114A1E8Q1luk67cA1Ey17sQI1ln8/v3G8tHx/PQ42m2O5qaB5J1p4Is/2nHd9+Qv2Wjk+er2/fhi34d645eq7LvT9dxb3oJQ3Xtv4ZBI3HbA8Myc6bFS/cXZAAAC3ElEQVRIia2X2barIAxAMYCKM2LVOtT//8sLiIBW61mumzdbNwmZRcGZZGlYVuM8j1UZptnpK+j7p7oQETCKtVAGkSjqP4BxThhGO8GM5PENGGM4UIYFHP8AG36OrShvrsAwusQ0GoXnYEt+YUpIdQImnN1xCDGeHMFE0HsOISqSA8j/xEmS78H2D3Yaa1sfDG/94oSEDmyiv3MIRY0F+TF+a55egJhvYAz2N5nTRCY4yqUg8/B1AMQGNGdTgLzr08aVUZLVaV/OoI7a2bOCRiGU6Ss4laTuWwC6VynBXCsk73Nqg9MJbLnhXIG1DgUefnJKXj3aiofUEix07Gl1Cyo3ojVRWCFBsZ4Cq0+azyK7Dc+FyLnsOMunTnZooR2CRYAyE3yM4nc4MOn/rd2ohqMCwsuP57VR64kylG5BxEevW+9Leuw3dtHGQorCY3orPatQlzwYSLe2ukofzkJUUp8BwnJ5s7Dv+6XoBiGft8yhpGps0GmJKpdRgLq42fviVccd2volhTk3F8MVGi0In4sg1EtOqEm2zbYR2cqg048Aviey8wWePbB0BmZSXnujs5LQHehMpTIFXukycQRECRNj178d3gxOqTTVOQezaQTwgqAygMAY2g4+WJ3SOX44vmtWn0dmMzdiq1KG4ysBtCIdf3uOHDm9AjurRCaATTl9EFMZMEyFkm7IpaUrjQF9msW9KlMucx0Os3ZJdxmQNDr+K+oHRCb5VlZK//nQfpfsOP1UWZlCVk/tVfiTHu89oQu5tl2cytJ5veNiGoV8EvNUxHb4L74r1tbhbMV4UuVgC1m5ik4mg2uPXJuV14/PAkmBFfru3l+mPQancfdvRIok8MKGaXAcAZconb137Aj4Hjrf4r3hhs7zMReEt8Z6hnqD9fkof748PF9XHi9I6p63HgKvDP7HEvh87VTZR68WXfpr0dXo6Wot7lZrJQ+XeS3q86EdOR/by8+HfwuBInflRofSAAAAAElFTkSuQmCC">
+            <div class="product-info">
+                <h2>Spotify - $13.500</h2>
+                <p>SPOTIFY PREMIUM 1 MES</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Spotify%0APrecio%3A+%2413.500%0ADescripci%C3%B3n%3A+SPOTIFY+PREMIUM+1+MES&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="https://www.haitiapps.com/3-home_default/ip-tv-smarters-pro.jpg">
+            <div class="product-info">
+                <h2>IPTV - $16.000</h2>
+                <p>3 DISPOSITIVO IPTV 30 DIAS</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+IPTV%0APrecio%3A+%2416.000%0ADescripci%C3%B3n%3A++3+DISPOSITIVO+IPTV+30+DIAS&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBEQACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAADBAABAgYF/8QAKhAAAgEDAgUDBAMAAAAAAAAAAQIDAAQREiEFE0FRYQYUMRUicaFSgZH/xAAbAQACAwEBAQAAAAAAAAAAAAACAwEEBQAGB//EAC0RAAIDAAAEAggHAAAAAAAAAAABAgMREhMhMQShFDJBUYGR0fAiYXGxweHx/9oADAMBAAIRAxEAPwBmt4+YkrjiVxxK4lGTRDIg2o0WIIA5psTQqQ5VUwy64glcSVUkpGWNEkOjEE5o0i3XEXkNOijSpgPjJOAMk/AFVDz3DvY9j6PBBPBaX928d5OVAiii18vV8ajkf4M1X5zacorojR9ArhKNV08nLOiW5vv6/seVdxm1uprd2UtE7ISPgkHFWIfiSa9pRsqddkoP2PABcd6NRCjAyNUjhI1LuxwFUZJPgUWYtZYrqbeIFNqRmVwVYHBVhgg0yK3sXq6mnjFZGp8UaVNZ0Xp1ovrthz8aOcvz36fvFZt6fKlhh+AjH0qvi7b/AJ5l8TN23qS6SPmC7Ny2jScEb7EdhjG/auqUOSm+2B312vxks9bX/XkdPFZrZyvDHZxXFva8PNwZDEHM8x6g4yfx5/FU3LjWt428/RG3Dw6qfCopxjHdzdkY4fZ2lnc8EsZ7WGW89tJLNqQNhSCceTnYeAe9FOUpxsmni1JBUeHrqdVbinLG39/ftELeBLLhPDrrkxq0F1L744wYlZD9pPzkKwAH8sCnSbnZKO90s/Pr9fIiqlQrg0uqb34p/wAeY3ZQRX1xwuWGxR4+KSy3F5JOgkwozhM4236Df90ubcIzTl1hiWdPiW6602pJetrf0OA4yXF/M8kQhMrGURAY0K24GOmxG1bdCXAknudPkMhVr0IZKUoHlVUOXPqDidxbmCa8dkK6TsNTDsWxkj+6CHhKoy1RLrsvnHhlLoI+/uV0abmcaF0riQ/ap6DfYeKsciPuQUa59Or+YL3kyukizyB0GlGDnKjsD0FHyYtZg+FUt0EbiQoU5j6C2orqOCe+O9Fy1u4WIVPsQXtxGiJHcTIqNrRVkICt3HY+a7kxb1ou1VMUmmaR2Z2LMxyWY5JNOjBLsaNVIy0tLVZ5pUAmm801VliPhzBlo1WPjQZ5lTwDY0lGSo4CxCgG0maJQwvV0pFZriwlhGmpyrMiPhwZko1AcqcK5lTwDFSXrJoXFDI1JEyTQjkkixQMI0KBkn//2Q==">
+            <div class="product-info">
+                <h2>Canva - $15.000</h2>
+                <p>CANVA PRO DE 30 DIAS</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B573232147460&text=Hola%21%0A%0APara+comprar+la+siguiente+plataforma%3A%0A%0ANombre%3A+Canva%0APrecio%3A+%2415.000%0ADescripci%C3%B3n%3A++CANVA+PRO+DE+30+DIAS&type=phone_number&app_absent=0" target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+     
