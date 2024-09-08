@@ -14,7 +14,9 @@
         }
 
         h1 {
-            color: #2c6e32;
+            background: linear-gradient(45deg, #2c6e32, #05c715, #2c6e32);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-align: center;
         }
 
@@ -34,16 +36,107 @@
         }
 
         .category button {
-            background-color: #4CAF50;
+            background: linear-gradient(45deg, #4CAF50, #00dd4d, #4CAF50);
             color: white;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             border-radius: 20px;
+            font-weight: 795;
         }
 
         .category button:hover {
             background-color: #45a049;
+        }
+        .link {
+            display: block;
+            background: linear-gradient(to right, #4bd6e9, #ac8af0);;
+        }
+
+        /* Estilos del segundo código */
+        .plans-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Centra los elementos en pantallas grandes */
+            margin-top: 20px;
+        }
+        .plan-card {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        .plan-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .plan-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .plan-description {
+            font-size: 10px;
+            color: #aaa;
+            margin-bottom: 10px;
+            text-align: left;
+            line-height: 1.4;
+        }
+        .plan-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #90ee90;
+            margin: 10px 0;
+        }
+        .subscribe-button {
+            background: linear-gradient(45deg, #7ef7ac, #00ff62);
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .subscribe-button:hover {
+            background-color: #68c489;
+        }
+        .exclusive-roles {
+            margin-top: 10px;
+            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+        }
+        .exclusive-role {
+            background-color: #333;
+            border-radius: 12px;
+            padding: 5px 10px;
+            color: #90ee90;
+        }
+
+        /* Estilos específicos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px; /* Evita cortes en pantallas pequeñas */
+            }
+            .plans-container {
+                flex-direction: column;
+                align-items: center; /* Centra los elementos en pantallas pequeñas */
+                gap: 20px;
+            }
+            .plan-card {
+                width: 100%;
+                max-width: 300px; /* Limita el tamaño máximo en pantallas móviles */
+            }
         }
     </style>
 </head>
@@ -59,143 +152,49 @@
             </a>
         </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membresía Discord</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fff;
-            color: #000;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #5865F2;
-        }
-
-        .important-text {
-            color: red;
-            font-weight: bold;
-        }
-
-        .icon {
-            margin-right: 5px;
-        }
-
-        .section {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .section img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
-
-        .discord-logo {
-            width: 100px;
-            margin-bottom: 10px
-        }
-        .important {
-            color: red;
-            font-weight: bold;
-        }
-        .step {
-            margin: 20px 0;
-        }
-        .step-title {
-            color: green;
-            font-weight: bold;
-        }
-
-        .text-highlight {
-            color: #001eff;
-            
-        }
-        .note {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
-        }
-        img {
-            width: 40px;
-            vertical-align: middle;
-        }
-        .arrow {
-            margin: 10px 0;
-            text-align: center;
-        }
-        .link {
-            display: block;
-            background: linear-gradient(to right, #4bd6e9, #ac8af0);;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 25px;
-            margin: 10px auto;
-            max-width: 150px;
-        }
-
-        .warning-box {
-            border: 2px solid red;
-            padding: 20px;
-            background-color: #ffeaea;
-            margin: 20px 0;
-            text-align: center;
-        }
-</style>
-</head>
-<body>
-
-    <div class="section">
-        <img src="https://img.tvfindr.com/uploads/2024/03/discord-server-logo-1.png" class="discord-logo">
-        <h2>𝗗𝗶𝘀𝗰𝗼𝗿𝗱</h2>
-                </div>
-       </div>
-        <p class="important">
-            <img src="https://cdn.discordapp.com/emojis/1236226235269382176.gif?size=44&quality=lossless" alt="Importante Icono"> importante
-            <img src="https://cdn.discordapp.com/emojis/1236226235269382176.gif?size=44&quality=lossless"
-        </p>
-        <p>
-            Para poder <span class="text-highlight">comprar</span> una membresía mensual, es <span class="text-highlight">obligatorio</span> que <span class="text-highlight">descargar discord</span> y <span class="text-highlight">registrarse,</span> si ya  tienes una cuenta de discord mucho mejor, ya que <span class="text-highlight">la membresía se compra atreves de discord por medio de un servidor oficial de nuestra plataforma,</span> donde podrás comprar membresías mensuales a buen precio o plataformas estreaming individual y muchos mas servicios, donde también como en WhatsApp <span class="text-highlight">se le atenderá todo el día desde que el soporte este disponible.</span>
-        </p>
-    </div>
-
-    <div class="arrow">
-            <p class="important-text">OBLIGATORIO ESTAR EN EL SERVIDOR DE DISCORD</p>
-            <a href="https://discord.gg/yx6p8fME8v" class="link" target="_blank">link del servidor</a>
+    <div class="plans-container">
+        <!-- Plan Básico -->
+        <div class="plan-card">
+            <img src="https://cdn.discordapp.com/attachments/1244849428213399614/1282121016214028399/dinoblanco.png?ex=66de33be&is=66dce23e&hm=5db9535fe22c3abf079556b4c86597775bf22ad739086a7b1990b1f4e087641b&" alt="Plan Básico">
+            <div class="plan-title">Plan Básico</div>
+            <div class="plan-description">
+                Si compras este plan Básico obtienes todos los beneficios por un mes:
+                <ul>
+                    <li>➤ PERFIL NETFLIX PRIVADA 1 DISPOSITIVO</li>
+                    <li>➤ PANTALLA PRIME VIDEO ORIGINAL PRIVADA</li>
+                    <li>➤ 87% de descuento en todas tus compras por un mes</li>
+                </ul>
+                Estos son combos de solo 2 plataformas mas un 87% de descuento en todas tu compras de plataformas por un mes, puedes compartir el 87% de descuento con amigos, recuerdo solo por un mes, los precios originales de cada pantalla los encuentras en el apartado de plataformas para que sepas cuanto vale cada pantalla individual.
+            </div>
+            <div class="plan-price">$18.000 COP / mes</div>
+            <button class="subscribe-button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=573232147460&text=comprar+membres%C3%ADa%0A%0ANombre+del+Plan%3A+Plan+B%C3%A1sico%0APrecio%3A+%2418.000+COP%0ADescripci%C3%B3n%3A+Plan+B%C3%A1sico+por+un+mes&type=phone_number&app_absent=0';">Suscribirse</button>
+            <div class="exclusive-roles">
+                <div class="exclusive-role">miembros exclusivos</div>
+                <div class="exclusive-role">Básico</div>
+            </div>
         </div>
-
-    </div>
-
- <div class="step">
-            <p class="step-title">Paso para comprar la membresía</p>
-            
-            <p>
-                <span class="text-highlight">Cuando ya estés dentro del servidor de Discord tienes que hacer lo siguiente,</span> volver a esta pagina o sii gustas puedes hacerlo directamente desde discord ya es tu decisión, <span class="text-highlight">sii lo vas hacer directamente desde discord,</span> dentro del servidor <span class="text-highlight">esta un canal llamado membresías desde ese canal puedes comprar las membresías y ver la información,</span> sii lo vas hacer desde esta pagina <span class="text-highlight">tienen que darle a este botón para que selecciones tu membresía y la compres, en la descripción de las membresías esta toda la información de los beneficios que puedes tener obteniendo estas membresías.</span>
-        </div>
-
-    <div class="arrow">
-            <a href="" class="link" target="_blank">Comprar membresías</a>
+        <!-- Plan Estándar -->
+        <div class="plan-card">
+            <img src="https://cdn.discordapp.com/attachments/1244849428213399614/1282121073323806731/dinonegro.png?ex=66de33cc&is=66dce24c&hm=3ee2b922ae5c1065ae7b2475c4603f9ee33abee3e1f5a1e3371a7575c13df73a&" alt="Plan Estándar">
+            <div class="plan-title">Plan Estándar</div>
+            <div class="plan-description">
+                Si compras este plan Estándar obtienes todos los beneficios por un mes:
+                <ul>
+                    <li>➤ PERFIL NETFLIX PRIVADA 1 DISPOSITIVO</li>
+                    <li>➤ PANTALLA PRIME VIDEO ORIGINAL PRIVADA</li>
+                    <li>➤ 1 PANTALLLA DISNEY+ PREMIUM PRIVADA</li>
+                    <li>➤ 75% de descuento en todas tus compras por un mes</li>
+                    <li>➤ Sorteo para ganar pantalla de tu preferencia.
+                </ul>
+                Estos son combos de solo 3 plataformas mas un 87% de descuento en todas tu compras de plataformas por un mes, puedes compartir el 75% de descuento con amigos, recuerdo solo por un mes, los precios originales de cada pantalla los encuentras en el apartado de plataformas para que sepas cuanto vale cada pantalla individual.
+            </div>
+            <div class="plan-price">$28.000 COP / mes</div>
+            <button class="subscribe-button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=573232147460&text=comprar+membres%C3%ADa%0A%0ANombre+del+Plan%3A+Plan+Est%C3%A1ndar%0APrecio%3A+%2428.000+COP%0ADescripci%C3%B3n%3A+Plan+Est%C3%A1ndar+por+un+mes&type=phone_number&app_absent=0';">Suscribirse</button>
+            <div class="exclusive-roles">
+                <div class="exclusive-role">miembros exclusivos</div>
+                <div class="exclusive-role">Estándar</div>
+            </div>
         </div>
     </div>
-
-    <div class="warning-box">
-    <p class="important-text">
-        <img src="https://cdn.discordapp.com/emojis/1236226235269382176.gif?size=44&quality=lossless"alt="Importante Icono" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
-        Aviso importante
-        <img src="https://cdn.discordapp.com/emojis/1236226235269382176.gif?size=44&quality=lossless" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;"
-        </p>
-        <p>
-            es obligatorio estar dentro del servidor sii no estas dentro del servidor no te va a dejar comprar la membresía y sii te deja comprar, no nos hacemos cargo de ese dinero perdido porque se te aviso que tienes que estar dentro del servidor.
-        </p>
-    </div>
-
 </body>
 </html>
